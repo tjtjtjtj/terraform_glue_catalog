@@ -1,6 +1,6 @@
 locals {
   database_name        = "member"
-  database_description = "会員マスタ2"
+  database_description = "会員マスタデータベース"
 }
 
 module "database" {
