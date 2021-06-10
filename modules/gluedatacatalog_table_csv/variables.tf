@@ -16,14 +16,16 @@ variable "location" {
 
 variable "columns" {
   type = list(object({
-    name = string
-    type = string
+    name    = string
+    type    = string
+    comment = string
   }))
 }
 
 variable "partition_keys" {
   type = list(object({
-    name = string
-    type = string
+    name    = string
+    type    = string
+    comment = string
   }))
 }

@@ -7,16 +7,19 @@ locals {
     {
       name = "id"
       type = "string"
+      comment = "ID"
     },
     {
       name = "name"
       type = "string"
+      comment = "名前"
     }
   ]
   partition_keys = [
     {
       name = "date_of_birth"
       type = "string"
+      comment = "誕生日"
     }
   ]
 }

@@ -5,12 +5,14 @@ locals {
   location          = "s3://gdpffff-bucket/member/members2"
   columns = [
     {
-      name = "id"
-      type = "string"
+      name    = "id"
+      type    = "string"
+      comment = "ID"
     },
     {
-      name = "address"
-      type = "string"
+      name    = "address"
+      type    = "string"
+      comment = "住所"
     }
   ]
   partition_keys = [

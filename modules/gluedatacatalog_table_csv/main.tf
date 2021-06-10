@@ -28,8 +28,9 @@ resource "aws_glue_catalog_table" "csv" {
     dynamic "columns" {
       for_each = var.columns
       content {
-        name = columns.value.name
-        type = columns.value.type
+        name    = columns.value.name
+        type    = columns.value.type
+        comment = columns.value.comment
       }
     }
   }
@@ -37,8 +38,9 @@ resource "aws_glue_catalog_table" "csv" {
   dynamic "partition_keys" {
     for_each = var.partition_keys
     content {
-      name = partition_keys.value.name
-      type = partition_keys.value.type
+      name    = partition_keys.value.name
+      type    = partition_keys.value.type
+      comment = partition_keys.value.comment
     }
   }
 }
